@@ -4,23 +4,23 @@
             Login
         </h1>
 
-        <form action="get">
+        <form action="get" [formGroup]="LoginForm" (ngSubmit)="login()">
             <div class="container-input">
-                <!-- <label for="">Email</label>
-                <br> -->
-                <app-input [value]="email"></app-input>
-                {{email}}
+                <label for="">Email</label>
+                <br>
+                <input formControlName="email" >
         
-                <!-- <br>
+                <br>
                 <br>
                 <label for="">Password</label>
                 <br>
-                <app-input [value]="password" [Type]="typePassword"></app-input>
+                <input type="password" formControlName="password">
+                <!-- <app-input (OnChange)="changePassword($event) [Type]="typePassword"></app-input> -->
             </div>
             <div class="container-button">
                 <app-button (OnClick)="onClick()" [Type]="typeButton">Login</app-button>
-                <a href="/subscribe">Subscribe</a>-->
+                <a href="/subscribe">Subscribe</a>
             </div> 
         </form>
-    </div>
+    </div> 
 </div>

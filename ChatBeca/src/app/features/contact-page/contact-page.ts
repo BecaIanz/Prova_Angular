@@ -36,6 +36,13 @@ export class ContactPage {
       }
     )
   }
+  ngOnInit(): void {
+    this.getContact()
+  }
+
+  openModal = () => {
+
+  }
 
   addContact = () => {
     this.api.addContact(this.newContact).subscribe(

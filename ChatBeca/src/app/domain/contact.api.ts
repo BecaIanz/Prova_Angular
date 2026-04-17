@@ -6,11 +6,14 @@ import { ContactDto } from './interfaces/ContactInterface';
 @Injectable({
   providedIn: 'root',
 })
+
+
 export class ContactApi extends Api{
+
     getAllContacts = () : Observable<ContactDto[]> => {
-        return this.client.get<ContactDto[]>(`${this.URL}/contacts`).pipe()
+        return this.client.get<ContactDto[]>(`${this.URL}/contacts`,{headers : this.headers}).pipe()
     }
     addContact = (data: ContactDto) : Observable<ContactDto> => {
-        return this.client.post<ContactDto>(`${this.URL}/contacts`, data).pipe()
+        return this.client.post<ContactDto>(`${this.URL}/contacts`, data, {headers : this.headers}).pipe()
     }
 }

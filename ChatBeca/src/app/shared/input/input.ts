@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
@@ -15,6 +15,15 @@ export class InputComponent {
   Type: string = "text"
 
   @Input()
-  value: string = ""
+  value: string = "";
+
+  @Output()
+  OnChange: EventEmitter<string> = new EventEmitter<string>()
+
+
+  changeText = (_value: Event) => {
+    this.value = (_value.target as HTMLInputElement).value
+    this.OnChange.emit(this.value)
+  }
 
 }
