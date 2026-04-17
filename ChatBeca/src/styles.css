@@ -1,0 +1,11 @@
+:host {
+    --light-purple-1: #efd1ee;
+    --light-purple-2: #dd99d1;
+    --my-magenta: #b554b5;
+    --purple: #7650b0;
+    --medium-pink: #f55d9c;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

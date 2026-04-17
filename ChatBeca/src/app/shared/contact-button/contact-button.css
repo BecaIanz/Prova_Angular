@@ -1,0 +1,19 @@
+.container-contact-button{
+    width: 17rem;
+    height: 5rem;
+    background-color: #f55d9c;
+    border-radius: 1rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1rem;
+
+    h1{
+        color: #efd1ee;
+    }
+    p{
+        color: #efd1ee;
+        opacity: 60%;
+    }
+}

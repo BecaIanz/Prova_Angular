@@ -1,0 +1,40 @@
+<div class="container-subscribe">
+    <div class="modal-subscribe">
+        <h1>Subscribe</h1>
+        <form>
+            <div class="container-input">
+                <label for="">Nome</label>
+                <br>
+                <app-input></app-input>
+                <br>
+                <br>
+
+                <label for="">Email</label>
+                <br>
+                <app-input></app-input>
+                <br>
+                <br>
+
+                <label for="">Nascimento</label>
+                <br>
+                <app-input></app-input>
+                <br>
+                <br>
+
+                <label for="">Telefone</label>
+                <br>
+                <app-input></app-input>
+        
+                <br>
+                <br>
+                <label for="">Password</label>
+                <br>
+                <app-input [Type]="typePassword"></app-input>
+            </div>
+            <div class="container-button">
+                <app-button [Type]="typeButton" (OnClick)="onClickButton()">Login</app-button>
+                <a href="/subscribe">Subscribe</a>
+            </div>
+        </form>
+    </div>
+</div>

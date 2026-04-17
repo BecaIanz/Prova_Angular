@@ -1,0 +1,7 @@
+<app-header [Title]="title"></app-header>
+<div class="container-contact">
+    @for(i of contacts; track $index){
+        <app-contact-button [UserName]="i.username" [Phone]="i.phone"></app-contact-button>
+    }
+    <app-button [Title]="AddContactButton" (OnClick)="addContact()"></app-button>
+</div>

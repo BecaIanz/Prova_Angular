@@ -1,0 +1,14 @@
+input{
+    background-color: #efd1ee;
+    border: 1px solid #b554b5;
+    height: 2rem;
+    width: 20rem;
+}
+input:hover{
+    background-color: #ddbadb;
+    border: 1px solid #9e589e;
+}
+input:focus{
+    background-color: #efd1ee;
+    border: 1px solid #9e589e;
+}
